@@ -30,7 +30,7 @@ def split_item(item_string):
 ```{{execute}}
 
 Now we can apply the function:<br>
-`order_data[['ITEM', 'SIZE', 'METRIC']] = order_data.apply(lambda row: split_item(row['ITEM']),axis=1, result_type='expand')`{{execute}}
+`order_data[['ITEM', 'SIZE', 'METRIC']] = order_data.apply(lambda row: split_item(row['ITEM']), axis=1, result_type='expand')`{{execute}}
 
 Let's check out the final result:<br>
 `order_data`{{execute}}
