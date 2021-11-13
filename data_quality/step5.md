@@ -24,7 +24,7 @@ We can see that some names were recorded with the last name first and a comma in
 
 Let's write a small function to fix the order of the name. Execute each line separately<br>
 `def fix_order(name):`{{execute}}
-`   first_and_last = name.split(",")`{{execute}}
+`\tfirst_and_last = name.split(",")`{{execute}}
 `   if len(first_and_last) > 1:`{{execute}}
 `       return ' '.join([first_and_last[1].strip(), first_and_last[0].strip()])`{{execute}}
 `   else:`{{execute}}
