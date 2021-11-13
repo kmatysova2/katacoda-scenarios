@@ -9,7 +9,7 @@ customer_data = customer_data.drop('NAME', axis=1)
 Let's look at the result:<br>
 `customer_data.iloc[:,5:]`{{execute}}
 
-Also it does not make sense to have the product name and the size in one column, especially since the metrics differ. Let's look at that.<br>
+Also, in the order dataset, it does not make sense to have the product name and the size in one column, especially since the metrics differ. Let's look at that.<br>
 `order_data['ITEM']`{{execute}}
 
 Ideally, we split the ITEM column into three different columns. One column that has the item description, one that has the amount and one that has the metric of the amount.<br>
