@@ -23,12 +23,15 @@ Another inconsistency is in the names column of the customer data.<br>
 We can see that some names were recorded with the last name first and a comma in between. We will assume that this is the only problem, but in real life we would have to double check how the data were collected. For example with the name "Ralf Simon" we cannot be sure which is the first and which is the last name.<br>
 
 Let's write a small function to fix the order of the name. Execute each line separately<br>
-`def fix_order(name):`{{execute}}
-`\tfirst_and_last = name.split(",")`{{execute}}
-`   if len(first_and_last) > 1:`{{execute}}
-`       return ' '.join([first_and_last[1].strip(), first_and_last[0].strip()])`{{execute}}
-`   else:`{{execute}}
-`       return first_and_last[0]`{{execute}}``{{execute}}
+
+```
+def fix_order(name):
+   first_and_last = name.split(",")
+    if len(first_and_last) > 1:
+        return ' '.join([first_and_last[1].strip(), first_and_last[0].strip()])
+    else:
+        return first_and_last[0];
+```{{execute}}
 
 And now let's apply the function:<br>
 `customer_data['NAME'] = customer_data.apply(lambda row: fix_order(row['NAME']),axis=1)`{{execute}}
