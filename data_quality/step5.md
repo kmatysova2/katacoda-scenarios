@@ -26,9 +26,9 @@ Let's write a small function to fix the order of the name. Execute each line sep
 
 ```
 def fix_order(name):
-   first_and_last = name.split(",")
+   first_and_last = name.split(\",\")
     if len(first_and_last) > 1:
-        return ' '.join([first_and_last[1].strip(), first_and_last[0].strip()])
+        return \" \".join([first_and_last[1].strip(), first_and_last[0].strip()])
     else:
         return first_and_last[0];
 ```{{execute}}
