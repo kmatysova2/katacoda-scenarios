@@ -22,7 +22,7 @@ Another inconsistency is in the names column of the customer data.<br>
 
 We can see that some names were recorded with the last name first and a comma in between. We will assume that this is the only problem, but in real life we would have to double check how the data were collected. For example with the name "Ralf Simon" we cannot be sure which is the first and which is the last name.<br>
 
-Let's write a small function to fix the order of the name. Execute each line separately<br>
+Let's write a small function to fix the order of the name. Click on the function and then press enter in the terminal to execute it.<br>
 
 ```
 def fix_order(name):
