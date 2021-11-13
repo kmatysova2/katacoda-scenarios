@@ -14,7 +14,7 @@ Also it does not make sense to have the product name and the size in one column,
 
 Ideally, we split the ITEM column into three different columns. One column that has the item description, one that has the amount and one that has the metric of the amount.<br>
 We need a custom function for that. This function uses [regular expressions](https://en.wikipedia.org/wiki/Regular_expression) to separate the three components.<br>
-Again, don't forget to click "Enter" in the terminal.<br>
+Again, don't forget to press Enter in the terminal to define it.<br>
 ```
 def split_item(item_string):
     word_list = item_string.split(" ")
@@ -34,3 +34,5 @@ Now we can apply the function:<br>
 
 Let's check out the final result:<br>
 `order_data`{{execute}}
+
+Note: We do have some missing values now that we didn't have before. However, just because we couldn't easily extract them doesn't mean they weren't there. We have made them much more manageable now and can examine which items don't have a size and if that is correct for example.

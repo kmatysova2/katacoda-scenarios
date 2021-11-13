@@ -5,12 +5,12 @@ This might be a bit harder to spot, but look closely at the column PLZ in custom
 
 There are two PLZ values that do not look right, there is one value 12121 and the other 99999.<br>
 
-Luckily, we can look up in another dataset we have what the correct PLZ would be.<br>
+Luckily, we can look up what the correct PLZ would be in another dataset.<br>
 `plz_data = pd.read_csv('data/plz_table.csv')`{{execute}}
 
 We can use that data to fill in the incorrect values.<br>
-`customer_data.loc[customer_data.CITY == "Aufseß", "PLZ"] = plz_data.loc[plz_data.CITY == 'Aufseß', 'PLZ'].values[0]`{{execute}}<br>
-`customer_data.loc[customer_data.CITY == "Huglfing", "PLZ"] = plz_data.loc[plz_data.CITY == 'Huglfing', 'PLZ'].values[0]`{{execute}}
+```customer_data.loc[customer_data.CITY == "Aufseß", "PLZ"] = plz_data.loc[plz_data.CITY == 'Aufseß', 'PLZ'].values[0]
+customer_data.loc[customer_data.CITY == "Huglfing", "PLZ"] = plz_data.loc[plz_data.CITY == 'Huglfing', 'PLZ'].values[0]```{{execute}}
 
 Let's check our progress:<br>
 `customer_data.iloc[:,1:7]`{{execute}}

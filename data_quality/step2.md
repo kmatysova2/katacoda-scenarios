@@ -5,7 +5,7 @@ Maybe you have noticed that in the column NAME, there are two duplicates.<br>
 First of all, we have Ursula Stein twice.<br>
 `customer_data[customer_data['NAME'].str.contains("Stein")]`{{execute}}
 
-The problem is that the CUSTOMER_ID is different and we might have orders for both of these customer IDs. In that case, we would have to make changes in both tables. Let's check:<br>
+The problem is that the CUSTOMER_ID is different for the two occurances and we might have orders for both of these customer IDs. In that case, we would have to make changes in both tables. Let's check:<br>
 `order_data[order_data['CUSTOMER_ID'].isin([5,8])]`{{execute}}
 
 Since we only have order data for customer ID number 5 and the entries are otherwise identical, we can delete the entry with ID number 8.<br>

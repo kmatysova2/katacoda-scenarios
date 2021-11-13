@@ -1,13 +1,13 @@
 ## Unification of Data - Combination
 
-For now, we have date and time collected as type string. This would require additional transformation if we wanted to work with the data, for example order them by date and time.<br>
+For now, we have date and time collected as data type string. This would require additional transformation if we wanted to work with the data, for example order them by date and time.<br>
 
 Here are the two columns:<br>
 `order_data[['DATE', 'TIME']]`{{execute}}
 
 A better data type is datetime, which can display both date and time simultaneously in a consistent format.<br>
 
-Let's write another small function to transform the two columns into one. Again, click on the function and then press enter in the terminal to execute it.<br>
+Let's write another small function to transform the two columns into one. Again, click on the function and then press Enter in the terminal to define it.<br>
 
 ```
 def timestamp_transform(date, time):
