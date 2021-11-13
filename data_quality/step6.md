@@ -11,11 +11,9 @@ Let's write another small function to transform the two columns into one.<br>
 
 ```
 def timestamp_transform(date, time):
-  date_string = str(date) + " " + str(time)
-  
-  timestamp = datetime.datetime.strptime(date_string, "%d.%m.%Y %H:%M")
-  
-  return timestamp
+    date_string = str(date) + " " + str(time)
+    timestamp = datetime.datetime.strptime(date_string, "%d.%m.%Y %H:%M")
+    return timestamp
 ```{{execute}}
 
 And now we can apply it:<br>
