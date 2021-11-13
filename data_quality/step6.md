@@ -21,5 +21,5 @@ And now we can apply it:<br>
 `order_data['TIMESTAMP'] = order_data.apply(lambda row: timestamp_transform(row['DATE'], row['TIME']),axis=1, result_type='expand')`{{execute}}
 And also delete the previous columns:<br>
 `order_data = order_data.drop('DATE', axis=1).drop('TIME', axis=1)`{{execute}}
-Let's see the result:
+Let's see the result:<br>
 `order_data`{{execute}}
