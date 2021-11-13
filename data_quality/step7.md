@@ -4,8 +4,7 @@ First, we want to split the names into first name and last name to make analysis
 ```
 customer_data[['FIRST_NAME', 'LAST_NAME']] = customer_data['NAME'].str.split(' ', 1, expand=True)
 customer_data = customer_data.drop('NAME', axis=1)
-```
-{{execute}}
+```{{execute}}
 
 Let's look at the result:<br>
 `customer_data.iloc[:,5:]`{{execute}}
@@ -28,8 +27,7 @@ def split_item(item_string):
         size = None
         metric = None
     return [item, size, metric]
-```
-{{execute}}
+```{{execute}}
 
 Now we can apply the function:<br>
 `order_data[['ITEM', 'SIZE', 'METRIC']] = order_data.apply(lambda row: split_item(row['ITEM']),axis=1, result_type='expand')`{{execute}}
