@@ -1,0 +1,12 @@
+CUSTOMER_ID,NAME,GENDER,STREET,NUMBER,PLZ,CITY,PHONE,WEBSITE
+1,Monika Kranz,female,Am Postpark,5,72250,Freudenstadt,4974415203377,http://www.raumthema.de/
+2,Erich Ziegler,diverse,Schloßberg,92,12121,Aufseß,49919892940,https://www.erich-ziegler.de/
+3,"Scharl, Hans",,Dr.-Martin-Luther-Straße,1,92708,Mantel,4996054289832,http://rentenberater-bayern.de/
+4,Ralf Simon,male,Lange Str.,63,27711,Osterholz-Scharmbeck,4947913176,N/A
+5,"Stein, Ursula",female,Kolberger Straße,21,27419,Sittensen,4942822557,http://www.stein-ferienwohnung.de/
+6,Hannelore Bamminger,,Mangfallstraße,7A,83569,Vogtareuth,498038909196,
+7,Rainer Schmid,male,Kapellenleite,6,99999,Huglfing,4915256188000,http://bayerisch-chinesische-medizin.de/
+8,Ursula Stein,female,Kolberger Straße,21,27419,Sittensen,4942822557,http://www.stein-ferienwohnung.de/
+9,"Sorin, Sandu",male,Am Bühlbrunnen,19,87634,Obergünzburg,498372980093,
+9,"Sorin, Sandu",male,Am Bühlbrunnen,19,87634,Obergünzburg,498372980093,
+10,Robert Mack,male,Schützenstraße,19,87663,Lengenwang,4983641788,N/A
