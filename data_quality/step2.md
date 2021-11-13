@@ -12,7 +12,7 @@ Since we only have order data for customer ID number 5 and the entries are other
 `customer_data = customer_data.drop(customer_data.index[customer_data['CUSTOMER_ID'] == 8]).reset_index(drop=True)`{{execute}}
 
 We also have the customer Sorin Sandu twice.<br>
-`customer_data[customer_data['NAME'].str.contains("Sandu")]`
+`customer_data[customer_data['NAME'].str.contains("Sandu")]`{{execute}}
 
 Here we don't have to worry about the orders, because the customer ID is identical, so we can just delete one occurance.<br>
 `customer_data = customer_data.drop(customer_data.index[customer_data['CUSTOMER_ID'] == 9][0]).reset_index(drop=True)`{{execute}}
