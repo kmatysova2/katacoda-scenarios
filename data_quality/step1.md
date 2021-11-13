@@ -1,6 +1,6 @@
 ## Data Observation
 
-To prepare this scenario, the GitHub repo containing the necessary data we will be using has been cloned. Also, necessary requirements have been imported and two datasets have been loaded into the variables customer_data and order_data.<br>
+To prepare this scenario, the GitHub repo containing the necessary data has been cloned. Also, necessary requirements have been imported and two datasets have been loaded into the variables customer_data and order_data.<br>
 
 Let's first observe the two datasets. While you look at them, ask yourself where you see some potential issues for data quality.<br>
 
