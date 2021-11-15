@@ -8,7 +8,7 @@ We can see that the max value for price is 249. Since we only have small and rel
 
 `(order_data['PRICE'].describe()['max'] - order_data['PRICE'].describe()['mean']) / order_data['PRICE'].describe()['std']`{{execute}}
 
-Usually more than 2 standard deviations is considered far away and with more than 3 standard deviations we can be pretty certain that there is an outlier.<br>
+Usually on a big scale, a common method to identify pattern anomalies is the data is anomaly detection ([Thudumu et al., 2020](https://link.springer.com/content/pdf/10.1186/s40537-020-00320-x.pdf)). However, generally we can say that more than 2 standard deviations is considered far away and with more than 3 standard deviations we can be pretty certain that there is an outlier.<br>
 
 In this case, we can look up the price and see that it is 2.49, so somebody simply forgot to record the period. Let's fix that:<br>
 `order_data.loc[order_data.PRICE == 249, "PRICE"] = 2.49`{{execute}}
