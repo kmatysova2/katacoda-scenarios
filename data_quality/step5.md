@@ -12,7 +12,7 @@ Usually on a big scale, a common method to identify pattern anomalies is the dat
 
 In this case, we can look up the price and see that it is 2.49, so somebody simply forgot to record the period. Let's fix that:<br>
 `order_data.loc[order_data.PRICE == 249, "PRICE"] = 2.49`{{execute}}
-However, if we could not do a manual look but would need to do this analysis automatically, we would treat the 249 as a missing value.<br>
+However, if we could not do a manual lookup but would need to do this analysis automatically, we would treat the 249 as a missing value.<br>
 
 Let's check if it looks better: <br>
 `order_data['PRICE'].describe()`{{execute}}
