@@ -1,4 +1,4 @@
-Hopefully this exercise opened your eyes to potential data quality issues. Be critical when you encounter data, especially when they are used for important decisions.<br><br>
+Hopefully this exercise opened your eyes to potential data quality issues and gave you some ideas on how to improve data quality. Be critical when you encounter data, especially when they are used for important decisions.<br><br>
 
 Food for thought: It is always easier to collect good data than to have to fix bad data afterwards. Think of that when you create questionnaires or when you create an excel file next time. Ask yourself how the data will be used in the future and add some input checks if necessary.<br><br>
 
