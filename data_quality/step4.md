@@ -8,7 +8,7 @@ There are two PLZ values that do not look right, there is one value 12121 and th
 Luckily, we can look up what the correct PLZ would be in another dataset.<br>
 `plz_data = pd.read_csv('data/plz_table.csv')`{{execute}}
 
-We can use that data to fill in the incorrect values.<br>
+In the dataset, there is a collection of cities and their corresponding PLZ. We can use the column CITY to impute the incorrect values.<br>
 ```customer_data.loc[customer_data.CITY == "Aufseß", "PLZ"] = plz_data.loc[plz_data.CITY == 'Aufseß', 'PLZ'].values[0]
 customer_data.loc[customer_data.CITY == "Huglfing", "PLZ"] = plz_data.loc[plz_data.CITY == 'Huglfing', 'PLZ'].values[0]```{{execute}}
 
